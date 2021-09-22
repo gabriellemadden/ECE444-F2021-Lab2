@@ -2,6 +2,15 @@
 
 This repo is a clone of https://github.com/miguelgrinberg/flasky.
 
+## Activity 1
+![1](https://github.com/gabriellemadden/ECE444-F2021-Lab2/blob/main/static/1.png?raw=true)
+
+## Activity 2
+![2](https://github.com/gabriellemadden/ECE444-F2021-Lab2/blob/main/static/2.png?raw=true)
+
+## Activity 3
+![3](https://github.com/gabriellemadden/ECE444-F2021-Lab2/blob/main/static/3.png?raw=true)
+
 
 Flasky
 ======
