@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, session, redirect, url_for
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_wtf import Form
@@ -22,14 +22,15 @@ def index():
     form = NameForm()
 
     if form.validate_on_submit():
-        name = form.name.data
+        session['name'] = form.name.data
         form.name.data = ''
+        return redirect(url_for('index'))
 
     return render_template(
         'index.html',
         current_time=datetime.utcnow(),
         form=form,
-        name=name
+        name=session.get('name')
     )
 
 @app.route('/user/<name>')
